@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 radius = 1
 outer_radius = 10
-resolution = 100
+resolution = 30
 length = 10
 
 
@@ -36,7 +36,7 @@ def topdown():
 
 
 x, y, virt_coords = topdown()
-plt.scatter(x, y, s=1)
+plt.scatter(x, y, s=2)
 plt.show()
 
 
@@ -51,11 +51,11 @@ def neg_height():
 pos_height_points = pos_height()
 neg_height_points = neg_height()
 
-plt.scatter(virt_coords * 2, pos_height_points + neg_height_points, s=1)
+plt.scatter(virt_coords * 2, pos_height_points + neg_height_points, s=2)
 plt.show()
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection="3d")
 
-ax.scatter(x * 2, y * 2, pos_height_points + neg_height_points, s=1)
+ax.scatter(x * 2, y * 2, pos_height_points + neg_height_points, s=2)
 plt.show()

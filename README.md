@@ -1,6 +1,8 @@
 # Wormhole-Visualization
 This is a simple Python visualization of a Wormhole using numpy and matplotlib. 
 
+<img src="./images/Wormhole.png">
+
 ## Dependencies
 * matplotlib
 * numpy
