@@ -56,6 +56,9 @@ plt.show()
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection="3d")
+ax.set_xticklabels([])
+ax.set_yticklabels([])
+ax.set_zticklabels([])
 
 ax.scatter(x * 2, y * 2, pos_height_points + neg_height_points, s=2)
 plt.show()
